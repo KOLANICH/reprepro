@@ -1,0 +1,5 @@
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/utils")
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/reprepro")
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/rredtool")
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/changestool")
+pass_through_cpack_vars()

@@ -19,3 +19,4 @@ Makefile
 /old
 /test
 /ac
+/include/reprepro/config.h

@@ -1,0 +1,82 @@
+#cmakedefine01 AC_APPLE_UNIVERSAL_BUILD
+
+/* Define to 1 if you have the `closefrom' function. */
+#cmakedefine01 HAVE_CLOSEFROM
+
+/* Define to 1 if you have the `dprintf' function. */
+#cmakedefine01 HAVE_DPRINTF
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine01 HAVE_INTTYPES_H
+
+/* Defined if libarchive is available */
+#cmakedefine01 HAVE_LIBARCHIVE
+
+/* Define to 1 if you have the `bz2' library (-lbz2). */
+#cmakedefine01 HAVE_LIBBZ2
+
+/* Define to 1 if you have the `gpgme' library (-lgpgme). */
+#cmakedefine01 HAVE_LIBGPGME
+
+/* Define to 1 if you have the `gpg-error' library (-lgpg-error). */
+#cmakedefine01 HAVE_LIBGPG_ERROR
+
+/* Define to 1 if you have the `lzma' library (-llzma). */
+#cmakedefine01 HAVE_LIBLZMA
+
+/* Define to 1 if you have the `z' library (-lz). */
+#cmakedefine01 HAVE_LIBZ
+
+/* Define to 1 if you have the `mkostemp' function. */
+#cmakedefine01 HAVE_MKOSTEMP
+
+/* Define to 1 if you have the `mkstemp' function. */
+#cmakedefine01 HAVE_MKSTEMP
+
+/* Define to 1 if stdbool.h conforms to C99. */
+#cmakedefine01 HAVE_STDBOOL_H
+
+/* Define to 1 if you have the `strndup' function. */
+#cmakedefine01 HAVE_STRNDUP
+
+/* Define to 1 if you have the `tdestroy' function. */
+#cmakedefine01 HAVE_TDESTROY
+
+/* Define to 1 if the system has the type `_Bool'. */
+#cmakedefine01 HAVE__BOOL
+
+/* Name of package */
+#define PACKAGE "reprepro"
+
+/* Define to the address where bug reports for this package should be sent. */
+#define PACKAGE_BUGREPORT "brlink@debian.org"
+
+/* Define to the full name of this package. */
+#define PACKAGE_NAME "reprepro"
+
+/* Define to the full name and version of this package. */
+#define PACKAGE_STRING "reprepro 5.3.0"
+
+/* Define to the one symbol short name of this package. */
+#define PACKAGE_TARNAME "reprepro"
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
+/* Define to the version of this package. */
+#define PACKAGE_VERSION "5.3.0"
+
+/* Version number of package */
+#define VERSION "5.3.0"
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+/* #  undef WORDS_BIGENDIAN */
+# endif
+#endif
